@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Kadwa', serif;
+}
+
+
+@layer utilities {
+  .group-btn {
+    @apply p-2 m-1 text-sm font-semibold rounded-full bg-gray-300 text-black border-none
+  }
+  .active-btn {
+    @apply bg-[#A30CFF] text-white
+  }
+}

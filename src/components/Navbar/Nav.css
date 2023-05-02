@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 760px){
+  .responsive-nav{
+  background-color: rgba(159, 250, 247, 0.4);
+  padding: 5px;
+  width:250px;
+  height: 150px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(46, 214, 240);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ transition: all .6s ease-in-out;
+
+} 
+.close-button{
+  display: none;
+}
+.nav-bar p{
+  text-transform: capitalize;
+}
+}
