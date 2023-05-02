@@ -4,26 +4,26 @@ const Foot = () => {
   return (
     <div>
       <div className=" bg-gray-700 md:py-14 py-7 px-28 flex md:flex-row flex-col items-center justify-between">
-        <div className="text-white flex flex-col md:gap-16 gap-8 md:w-[50%] max-w-sm md:max-w-none">
+        <div className="text-white flex flex-col md:gap-16 gap-8 md:w-[50%] max-w-xs md:max-w-none">
           <h2
             className="text-center md:text-justify md:text-[40px] text-[26px]
           "
           >
             Let's Work Together
           </h2>
-          <p className=" text-center md:text-justify text-[22px] md:text-[24px] w-[100%]">
+          <p className=" text-center md:text-justify text-[22px]  md:text-[24px] w-[100%]">
             We'll do our best for our client .Trust us , we must not make our
             client regret about project. Our direction is to get trust and keep
             working long tern with our client.{" "}
           </p>
-          <div className="flex gap-16 my-5 md:my-0">
-            <div>
+          <div className="flex md:gap-16 my-5 md:my-0 flex-wrap gap-8">
+            <div className=" ">
               <p className=" text-[20px] md:text-2xl">Call now:</p>
               <button className=" text-[20px] md:text-2xl">
                 +95 425212523
               </button>
             </div>
-            <div>
+            <div className="">
               <p className=" text-[20px] md:text-2xl">Email now:</p>
               <button className=" text-[20px] md:text-2xl">
                 hashtag.team@gmail.com
@@ -31,8 +31,8 @@ const Foot = () => {
             </div>
           </div>
         </div>
-        <div className="text-white flex flex-col md:gap-16 gap-5 md:w-[40%]  ">
-          <p className=" text-center md:text-justify">
+        <div className="text-white flex flex-col md:gap-16 gap-5 md:w-[40%] mt-3 md:mt-3  ">
+          <p className="text-[22px] md:text-2xl text-center md:text-justify">
             We'll contact you later.
           </p>
           <div className=" flex md:block">
