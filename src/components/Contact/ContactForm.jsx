@@ -26,8 +26,8 @@ const ContactForm = () => {
         <h3 className="font-semibold">Services You Need</h3>
         <ButtonGroup serviceType={serviceType} />
 
-        <form className="mt-3 ">
-          <div className="flex md:gap-2 gap-5 md:flex-row flex-col">
+        <form className="mt-3">
+          <div className="flex md:gap-2 gap-5 md:flex-row flex-col justify-center items-center">
             <div className="md:m-2">
               <Label htmlFor="name" className=" text-[22px] md:text-2xl">
                 Your Name
@@ -36,7 +36,7 @@ const ContactForm = () => {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Full Name"
+                placeholder="Full Name" className=" text-[24px] "
               />
             </div>
             <div className="md:m-2">
@@ -47,7 +47,7 @@ const ContactForm = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="example@hashtag.com"
+                placeholder="example@hashtag.com" className="text-[24px] md:text-2xl"
               />
             </div>
           </div>
@@ -62,7 +62,7 @@ const ContactForm = () => {
               rows={"5"}
               cols={"2"}
               id="message"
-              placeholder="Your Message..." 
+              placeholder="Your Message..."
             ></Textarea>
           </div>
 

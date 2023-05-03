@@ -31,19 +31,19 @@ const Path = () => {
       <div className=" md:w-1/5 w-auto flex flex-row md:flex-col mx-auto gap-10">
         <button
           onClick={() => filter("ui/ux")}
-          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-24 h-24 flex items-center justify-center"
+          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-20 h-20 flex items-center justify-center"
         >
           <h2>UI/UX</h2>
         </button>
         <button
           onClick={() => filter("frontend")}
-          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-24 h-24 flex items-center justify-center"
+          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-20 h-20 flex items-center justify-center"
         >
           <h2>F</h2>
         </button>
         <button
           onClick={() => filter("backend")}
-          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-24 h-24 flex items-center justify-center"
+          className=" bg-[#A30CFF] text-white rounded-[100%] md:w-32 md:h-32 w-20 h-20 flex items-center justify-center"
         >
           <h2>B</h2>
         </button>
