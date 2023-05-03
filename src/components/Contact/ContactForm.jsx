@@ -17,17 +17,21 @@ const ContactForm = () => {
           +95 975 638 4039
         </h3>
       </div>
-      <div className="md:right flex md:w-[50%] flex-col gap-2 md:my-auto md:justify-start justify-center md:items-start items-center">
-        <h2 className="md:text-4xl font-semibold text-3xl">Hey Got a Project?</h2>
+      <div className="md:right flex md:w-[50%] flex-col gap-2 md:my-auto md:justify-start justify-center md:items-start items-center ">
+        <h2 className="md:text-4xl font-semibold text-3xl">
+          Hey Got a Project?
+        </h2>
         <h3 className="font-semibold mt-3">Your Project Type</h3>
         <ButtonGroup projectType={projectType} />
         <h3 className="font-semibold">Services You Need</h3>
         <ButtonGroup serviceType={serviceType} />
 
-        <form className="mt-3">
-          <div className="flex gap-2">
-            <div className="m-2">
-              <Label htmlFor="name">Your Name</Label>
+        <form className="mt-3 ">
+          <div className="flex md:gap-2 gap-5 md:flex-row flex-col">
+            <div className="md:m-2">
+              <Label htmlFor="name" className=" text-[22px] md:text-2xl">
+                Your Name
+              </Label>
               <TextInput
                 type="text"
                 name="name"
@@ -35,8 +39,10 @@ const ContactForm = () => {
                 placeholder="Full Name"
               />
             </div>
-            <div className="m-2">
-              <Label htmlFor="email">Your Email</Label>
+            <div className="md:m-2">
+              <Label htmlFor="email" className=" text-[22px] md:text-2xl">
+                Your Email
+              </Label>
               <TextInput
                 type="email"
                 name="email"
@@ -45,17 +51,22 @@ const ContactForm = () => {
               />
             </div>
           </div>
-          <div className="m-2">
-            <Label htmlFor="message">Tell Us More About Your Requirement</Label>
+          <div className="m-2 flex flex-col  max-w-[400px] max-h-[200px] md:max-w-none md:max-h-none my-8 md:my-0">
+            <Label
+              htmlFor="message"
+              className=" text-[22px] text-center  md:text-justify mb-3 md:mb-0"
+            >
+              Tell Us More About Your Requirement
+            </Label>
             <Textarea
               rows={"5"}
               cols={"2"}
               id="message"
-              placeholder="Your Message..."
+              placeholder="Your Message..." 
             ></Textarea>
           </div>
 
-          <Button className="active-btn rounded-xl m-2" type="submit">
+          <Button className="active-btn rounded-xl md:m-2  my-3" type="submit">
             Send
           </Button>
         </form>
